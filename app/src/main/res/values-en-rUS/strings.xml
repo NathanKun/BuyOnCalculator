@@ -1,0 +1,37 @@
+﻿<resources>
+    <string name="app_name">代购计算器</string>
+    <string name="action_about">About</string>
+    <string name="action_history">Notes</string>
+    <string name="action_currency">Currency</string>
+    <string name="currencyPriceTextView">当前 %1$s-CNY 汇率</string>
+    <string name="button_get">获取</string>
+    <string name="button_calculate">calculate</string>
+    <string name="productPrice">商品价格(%1$s)</string>
+    <string name="discount">折扣(%)(原价*折扣)</string>
+    <string name="fee">服务费(%)</string>
+    <string name="shippingFee">邮费(%1$s)</string>
+    <string name="otherFee">杂费(%1$s)</string>
+    <string name="resultText">代购价(CNY)</string>
+    <string name="hint_0percent">0%</string>
+    <string name="hint_discount">100%</string>
+    <string name="hint_0">0</string>
+    <string name="resultPrice">0</string>
+    <string name="about">代购计算器 v3.0</string>
+    <string name="about2" formatted="false">
+        说明：\n
+        汇率来自雅虎汇率API\n
+        折扣和服务费为百分比，如输入80则为80%。\n
+        折扣是直接乘在原价上的。八折就填80，减 30% 就填70,空着就是原价。\n
+        服务费按原价算，不按折后价算。\n
+        \n
+        主界面右下角按钮可保存数据\n
+        保存的记录可在右上角 菜单-记录 中读取或删除\n
+        \n
+        \n
+        价格算法：\n
+        (原价*折扣+原价*服务费+邮费+杂费)*汇率\n
+        \n
+        \n
+        计算结果仅供参考！
+    </string>
+</resources>
