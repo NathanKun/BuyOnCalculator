@@ -1,3 +1,8 @@
+/**
+ * 代购计算器 MainActivity
+ * @author 何俊阳
+ * @version 3.0.5
+ */
 package com.nathankun.buyonsbspricescalculator;
 
 import android.app.AlertDialog;
@@ -34,7 +39,9 @@ import java.net.URL;
 import java.util.ArrayList;
 
 /**
- * 首页类
+ * 首页
+ * @author 何俊阳
+ * @version 3.0.5
  */
 public class MainActivity extends AppCompatActivity {
     /**
@@ -587,6 +594,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
+                saveConfig();
                 MainActivity.this.finish();
             }
         });
