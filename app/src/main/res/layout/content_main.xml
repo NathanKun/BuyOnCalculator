@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView_resultPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resultText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/editText_resultPrice"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_resultPrice"
+        android:layout_alignEnd="@+id/textView_currencyPrice"
+        android:layout_alignParentEnd="true"
+        android:cursorVisible="false"
+        android:focusableInTouchMode="false"/>
+
+    <TextView
+        android:id="@+id/textView_currencyPrice"
+        android:text="@string/currencyPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/textView_resultPrice"
+        android:layout_marginTop="23dp" />
+
+    <EditText
+        android:id="@+id/editText_currencyPrice"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_currencyPrice"
+        android:layout_alignEnd="@+id/textView_currencyPrice"
+        android:layout_alignParentEnd="true"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/textView_productPrice"
+        android:text="@string/productPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_currencyPrice"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp" />
+    <EditText
+        android:id="@+id/editText_productPrice"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_productPrice"
+        android:layout_alignEnd="@+id/editText_currencyPrice"
+        android:inputType="numberDecimal"
+        android:hint="@string/hint_0"/>
+    <TextView
+        android:id="@+id/textView_discount"
+        android:text="@string/discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_productPrice"
+        android:hint="@string/hint_discount"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp" />
+    <EditText
+        android:id="@+id/editText_discount"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_discount"
+        android:layout_alignEnd="@+id/editText_currencyPrice"
+        android:inputType="numberDecimal"
+        android:hint="@string/hint_discount"/>
+    <TextView
+        android:id="@+id/textView_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fee"
+        android:layout_below="@+id/textView_discount"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp" />
+    <EditText
+        android:id="@+id/editText_fee"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_fee"
+        android:layout_alignStart="@+id/editText_productPrice"
+        android:inputType="numberDecimal"
+        android:hint="@string/hint_0percent"/>
+    <TextView
+        android:id="@+id/textView_shippingFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shippingFee"
+        android:layout_below="@+id/textView_fee"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp" />
+    <EditText
+        android:id="@+id/editText_shippingFee"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_shippingFee"
+        android:layout_alignStart="@+id/editText_productPrice"
+        android:inputType="numberDecimal"
+        android:hint="@string/hint_0"/>
+    <TextView
+        android:id="@+id/textView_otherFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/otherFee"
+        android:layout_below="@+id/textView_shippingFee"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp" />
+    <EditText
+        android:id="@+id/editText_otherFee"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_otherFee"
+        android:layout_alignStart="@+id/editText_productPrice"
+        android:inputType="numberDecimal"
+        android:hint="@string/hint_0"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_emoji">
+        <!--
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText_otherFee"
+        android:src="@mipmap/emoji"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:onClick="emojiOnClick"
+        -->
+        </ImageView>
+
+</RelativeLayout>
